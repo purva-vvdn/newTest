@@ -22,3 +22,8 @@ Input Text    //textarea[@name="q"]    amazon.com
     Wait Until Element Is Visible    xpath=//h3[@class="LC20lb    timeout=5
     Click Element    xpath=//h3[@class="LC20lb
     Close Browser
+
+Example
+    Create File          ${PATH}    Some text
+    File Should Exist    ${PATH}
+    Copy File            ${PATH}    ~/file.txt

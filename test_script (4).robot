@@ -2,11 +2,11 @@
 Documentation     A test suite with a single test for New Tab
 ...               Created by hats' Robotcorder
 Library           SeleniumLibrary    timeout=10
-
+Library         OperatingSystem
 *** Variables ***
 ${BROWSER}    chrome
 ${SLEEP}      10
-
+${PATH}         ${CURDIR}/example.txt
 *** Test Cases ***
 New Tab test
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
